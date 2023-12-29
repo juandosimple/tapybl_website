@@ -131,7 +131,7 @@ p{
     padding:0.5rem;
 }
 
-.section-five img, .section-six img , .section-seven img {
+.section-five img, .section-six img , .section-seven img,.section-eight img {
     max-width: 100%;
 }
 
@@ -139,4 +139,8 @@ p{
     height: 800px;
     margin:0 auto;
     display: block;
+}
+
+.section-eight{
+    overflow: hidden;
 }
