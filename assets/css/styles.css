@@ -133,8 +133,6 @@ p{
 
 .section-five img, .section-six img , .section-seven img {
     max-width: 100%;
-    margin:0 auto;
-    display: block;
 }
 
 .section-seven img{
