@@ -144,3 +144,15 @@ p{
 .section-eight{
     overflow: hidden;
 }
+
+.section-nine ul{
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-nine ul li{
+    margin:1rem 0;
+}
