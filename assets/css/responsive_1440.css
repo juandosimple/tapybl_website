@@ -1,0 +1,21 @@
+/* 1920 and above*/
+@media (min-width: 1440px) {
+  #home-background {
+    background: rgb(25,28,33);
+    background: -moz-linear-gradient(180deg, rgba(25,28,33,1) 0%, rgba(25,28,33,1) 88%, rgba(25,28,33,0) 88%);
+    background: -webkit-linear-gradient(180deg, rgba(25,28,33,1) 0%, rgba(25,28,33,1) 88%, rgba(25,28,33,0) 88%);
+    background: linear-gradient(180deg, rgba(25,28,33,1) 0%, rgba(25,28,33,1) 88%, rgba(25,28,33,0) 88%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#191c21",endColorstr="#191c21",GradientType=1);
+  }
+  .full-height.first-section .home-buttons_container {
+    max-width: 80%;
+  }
+
+  #home section#video-part {
+    padding: 0 4rem;
+  }
+  #stats #home-top_stats {
+    transform: scale(1.1);
+  }
+}
+/* 1920 and above*/

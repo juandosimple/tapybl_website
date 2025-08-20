@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detección de Puerta con Picaporte</title>
+  <!-- Carga de TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <style>
+    /* Estilo para el overlay que muestra la detección */
+    #objectLabel {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 20px;
+      z-index: 9999;
+    }
+    /* Ocultar el video (se usa solo para el procesamiento) */
+    video {
+      display: none;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+    }
+    #startButton {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Detección de Puerta con Picaporte</h1>
+  <!-- Botón para iniciar la cámara -->
+  <button id="startButton">Iniciar Cámara</button>
+  <video id="video" autoplay playsinline muted></video>
+  <canvas id="canvas"></canvas>
+  <!-- Overlay para mostrar la detección -->
+  <div id="objectLabel"></div>
+
+  <!-- Carga el archivo JavaScript -->
+  <script src="main.js?v=22"></script>
+</body>
+</html>

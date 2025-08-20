@@ -1,0 +1,793 @@
+.page-pricing-template .navbar{
+    background-color: rgba(26, 28, 33, 0.9) !important;
+}
+
+.SelectSubscriptionContainer {
+    padding: 30px;
+    padding-top: 120px;
+    font-family: Montserrat;
+}
+
+.SelectSubscriptionContainer .SelectTitle {
+    color: #0E4B47;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.SelectSubscriptionContainer .UnderTierInfo {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.SelectSubscriptionContainer .Footnote {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+.SelectSubscriptionContainer .SubscriptionPlansContainer {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SelectSubscriptionContainer .SwitchWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.PlansSwitchContainer {
+    border: 1px solid #D5DBDF;
+    padding: 4px;
+    background-color: #F7F7FC;
+    text-align: center;
+    display: inline-block;
+    border-radius: 72px;
+    white-space: nowrap;
+}
+
+.PlansSwitchContainer button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.7rem 4rem;
+    border-radius: 72px;
+    margin-right: 7px;
+    font-family: Montserrat;
+    color: #191C21;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.PlansSwitchContainer .Selected {
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    color: #FFF;
+}
+
+.PlansSwitchContainer .LastElement {
+    margin-right: 0;
+}
+
+.SubscriptionDetailsContainer {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 12px 0px rgba(20, 20, 43, 0.08);
+    overflow: hidden;
+}
+
+.SelectSubscriptionContainer .Header {
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    text-align: center;
+}
+
+.SelectSubscriptionContainer .Header p {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 18px;
+}
+
+.SubscriptionDetailsContainer .PriceContainer {
+    padding: 24px 60px 40px 60px;
+    border-bottom: 1px solid #D5DBDF;
+}
+
+.SubscriptionDetailsContainer h3 {
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline #B8EF36;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 7px;
+    margin-bottom: 30px;
+}
+
+.SubscriptionDetailsContainer .YearPrice {
+    display: inline;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.SubscriptionDetailsContainer .PerYear {
+    color: #6F6C90;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.SubscriptionDetailsContainer .ResourcesContainer {
+    padding: 20px 60px 40px 60px;
+    border-bottom: 1px solid #D5DBDF;
+}
+
+.SubscriptionDetailsContainer .ResourcesContainer p {
+    color: #0E4B47;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.SubscriptionDetailsContainer .ResourcesContainer img {
+    margin-right: 18px;
+}
+
+.SelectSubscriptionContainer .ResourceContainer {
+    margin-bottom: 18px;
+}
+
+.SubscriptionDetailsContainer .ResourcesContainer span {
+    color: #191C21;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.SubscriptionDetailsContainer .AddUsersContainer {
+    padding: 20px 7rem 60px 60px;
+    position: relative;
+}
+
+.SubscriptionDetailsContainer .AddUsersContainer p {
+    color: #0E4B47;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.SubscriptionDetailsContainer .MonthPrice {
+    display: inline;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.SubscriptionDetailsContainer .PerMonth {
+    color: #6F6C90;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.SubscriptionDetailsContainer .AddUsersContainer .SignupButton {
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    padding: 18px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+
+.SubscriptionDetailsContainer .AddUsersContainer .SignupButton:hover {
+    color: #B8EF36;
+    box-shadow: 0px 4.626px 18.504px 0px rgba(43, 137, 130, 0.28);
+}
+
+.SubscriptionDetailsContainer .AddUsersContainer .TrialButton {
+    border-radius: 8px;
+    border: 1px solid #D5D7DA;
+    background: #FFF;
+    outline: none;
+    padding: 18px 20px;
+    width: 100%;
+    color: #414651;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.SubscriptionDetailsContainer .AddUsersContainer .TrialButton:hover {
+    box-shadow: 0px 4.626px 18.504px 0px rgba(43, 137, 130, 0.28);
+    border: 2px solid #2B8982;
+    color: #2B8982;
+    padding: 17px 19px;
+}
+
+.SubscriptionDetailsContainer .FeaturesContainer {
+    background: #F2F2F7;
+    padding: 24px 40px;
+}
+
+.SubscriptionDetailsContainer .FeaturesContainer h6 {
+    color: #191C21;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 26px;
+}
+
+.SubscriptionDetailsContainer .FeaturesContainer .FeatureItem {
+    color: #191C21;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.SubscriptionDetailsContainer .FeaturesContainer .FeatureItem img {
+    margin-right: 14px;
+    display: block;
+}
+
+.SelectSubscriptionContainer .PlansCalculatorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.PlansCalculatorContainer .InputTitle {
+    color: #6F6C90;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.PlansCalculatorContainer .UsersInput {
+    border: 1px solid #B8EF36;
+    padding: 0.6rem;
+    border-radius: 80px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.PlansCalculatorContainer .UsersInput input {
+    max-width: 60px;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.PlansCalculatorContainer .CalculationResult {
+    border-radius: 80px;
+    background: #F2F2F7;
+    border: 1px solid #F2F2F7;
+    padding: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    min-width: 200px;
+}
+
+.PlansCalculatorContainer .InputsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.PlansCalculatorContainer .CalculatorEq {
+    margin-top: 46px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+.FeaturesTable {
+    width: 100%;
+    margin-top: 90px;
+}
+
+.FeaturesTable td {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: black;
+}
+
+.FeaturesTable .SelectPlan td {
+    text-align: center;
+}
+
+.FeaturesTable .SelectPlan button {
+    border-radius: 8px;
+    background: linear-gradient(317deg, #04504E -11.84%, #022221 110.79%);
+    border: none;
+    outline: none;
+    padding: 0.6rem 2rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.FeaturesTable .SelectPlan button:hover {
+    box-shadow: 0px 4.626px 18.504px 0px rgba(43, 137, 130, 0.28);
+    color: #B8EF36;
+}
+
+.FeaturesTable td.TableTitle {
+    color: #0E4B47;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+}
+
+.FeaturesTable .StickyHeader {
+    position: sticky;
+    top: 80px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.FeaturesTable .StickyButtons {
+    position: sticky;
+    top: 130px;
+    background-color: white;
+}
+
+.FeaturesTable .PricesSubheader .Plan {
+    color: #0E4B47;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; 
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.FeaturesTable .SectionHeader td {
+    padding: 20px 0px 6px 0px;
+    font-weight: bold;
+    text-align: center;
+    background: #FBFBFB;
+    border-bottom: 2px solid #DFE1E6;
+}
+
+.FeaturesTable .FeatureName {
+    text-align: start !important;
+}
+
+.FeaturesTable .FeatureListing td {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.FeaturesTable .CrossValue {
+    width: 26px;
+    height: 26px;
+}
+
+.FeaturesTable .FeatureListing td .FeatureTextValue {
+    font-weight: 500;
+}
+
+.FeaturesTable .FeatureNameMobile {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.FeaturesTable .FeatureNameMobile td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.FeaturesTable .MobileTableTitle {
+    color: #0E4B47;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+}
+
+.FAQTitle {
+    color: #0E4B47;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.FAQCard {
+    border-radius: 18px;
+    background: #FFF;
+    box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+    padding: 32px 37px;
+    margin-bottom: 28px;
+}
+
+.FAQCard .Question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FAQCard .Question p {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+}
+
+.FAQCard .Question button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.FAQCard .Question .ButtonOpen {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FAQCard .Answer {
+    margin-top: 6px;
+}
+
+.FAQCard .Answer p {
+    color: #6F6C90;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.FAQCardOpen {
+    border: 2px solid var(--Secondary-Green-1, #B8EF36);
+}
+
+@media only screen and (max-width: 1028px) and (min-width: 767px) {
+    .SubscriptionDetailsContainer .AddUsersContainer {
+        padding: 20px 40px 60px 40px;
+    }
+
+    .SubscriptionDetailsContainer .PriceContainer {
+        padding: 20px 40px 45px 40px;
+    }
+
+    .SubscriptionDetailsContainer .ResourcesContainer {
+        padding: 20px 40px;
+    }
+
+    .SubscriptionDetailsContainer .FeaturesContainer {
+        padding: 24px 10px;
+    }
+
+    .FeaturesTable .SelectPlan button {
+        padding: 0.6rem;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .FeaturesTable .PricesSubheader .Plan {
+        white-space: nowrap;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .SelectSubscriptionContainer {
+        padding: 20px;
+        padding-top: 120px;
+    }
+
+    .SelectSubscriptionContainer .SelectTitle {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .SelectSubscriptionContainer .SubscriptionPlan {
+        min-width: 80vw;
+    }
+
+    .PlansSwitchContainer button {
+        padding: 0.1rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .SubscriptionDetailsContainer h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .SubscriptionDetailsContainer .YearPrice {
+        font-size: 30px;
+    }
+
+    .SubscriptionDetailsContainer .PerYear {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SelectSubscriptionContainer .Header p {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .SubscriptionDetailsContainer .PriceContainer {
+        padding: 24px;
+        border: none;
+    }
+
+    .SubscriptionDetailsContainer .FeaturesContainer {
+        margin-right: 14px;
+        margin-left: 14px;
+        border-radius: 30px;
+    }
+
+    .SubscriptionDetailsContainer .FeaturesContainer h6 {
+        font-size: 14px;
+        color: #0E4B47;
+    }
+
+    .SubscriptionDetailsContainer .FeaturesContainer .FeatureItem {
+        font-size: 14px;
+    }
+
+    .SubscriptionDetailsContainer .ResourcesContainer {
+        padding: 24px 37px;
+    }
+
+    .SubscriptionDetailsContainer .ResourcesContainer p {
+        font-size: 14px;
+    }
+
+    .SubscriptionDetailsContainer .ResourcesContainer span {
+        font-size: 14px;
+    }
+
+    .SubscriptionDetailsContainer .ResourcesContainer img {
+        margin-right: 14px;
+    }
+
+    .SubscriptionDetailsContainer .AddUsersContainer {
+        padding: 14px 37px 37px 37px;
+    }
+
+    .SubscriptionDetailsContainer .AddUsersContainer p {
+        font-size: 14px;
+    }
+
+    .SubscriptionDetailsContainer .AddUsersContainer .SignupButton {
+        margin-top: 24px;
+    }
+
+    .PlansCalculatorContainer .UsersInput {
+        min-width: 120px;
+    }
+
+    .PlansCalculatorContainer .CalculationResult {
+        min-width: 120px;
+    }
+
+    .PlansCalculatorContainer .CalculationResult {
+        font-size: 20px;
+    }
+
+    .PlansCalculatorContainer .UsersInput {
+        padding: 0.8rem;
+    }
+
+    .PlansCalculatorContainer .UsersInput input {
+        font-size: 20px;
+    }
+
+    .PlansCalculatorContainer .CalculatorEq {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .FeaturesTable td.TableTitle {
+        display: none;
+    }
+
+    .FeaturesTable .FeatureListing .FeatureName {
+        display: none;
+    }
+
+    .FeaturesTable .SectionHeader td {
+        text-align: center !important;
+    }
+
+    .FeaturesTable .FeatureListing td {
+        border-bottom: 1px solid #DFE1E6;
+    }
+
+    .FeaturesTable .PricesSubheader .Plan {
+        font-size: 12px;
+    }
+
+    .FeaturesTable .SelectPlan button {
+        font-size: 12px;
+        padding: 0.6rem;
+    }
+
+    .FAQCard .Question p {
+        font-size: 16px;
+    }
+
+    .FAQCard .Answer p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .FeaturesTable .SelectPlan button {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .PlansCalculatorContainer .CalculationResult {
+        font-size: 15px;
+    }
+
+    .PlansCalculatorContainer .UsersInput input {
+        font-size: 15px;
+    }
+}
+
+.special-acclaration{
+    font-size: 20px;
+    color:#6F6C90;
+    position: absolute;
+    bottom: 1rem;
+    left:60px;
+}

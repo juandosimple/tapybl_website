@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartel 3D AR sin Clipping</title>
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- AR.js para A-Frame -->
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <a-scene
+    embedded
+    arjs="trackingMethod: best;
+          sourceType: webcam;
+          sourceWidth: 320;
+          sourceHeight: 240;
+          displayWidth: 320;
+          displayHeight: 240;
+          debugUIEnabled: false;">
+    
+    <!-- Luces para resaltar el volumen -->
+    <a-entity light="type: ambient; color: #666"></a-entity>
+    <a-entity light="type: directional; color: #fff; intensity: 0.9" position="1 2 1"></a-entity>
+
+    <!-- Marcador AR -->
+    <a-marker type="pattern" url="pattern1.patt">
+      <!-- Rotado -90 para que quede vertical en el mundo real -->
+      <a-entity rotation="-90 0 0">
+
+        <!-- Box trasero (más grande), con grosor 0.08 -->
+        <a-box 
+          width="1.7"
+          height="1.8"
+          depth="0.08" 
+          position="0 0 -0.09"  
+          material="color: #333; metalness: 0; roughness: 0.8;">
+        </a-box>
+
+        <!-- Plano frontal (un poco más pequeño) para el “cartel” -->
+        <a-plane
+          width="1.5"
+          height="1.7"
+          position="0 0 0.01"
+          material="color: #f8f8f8; shader: flat;">
+        </a-plane>
+
+        <!-- Texto adelantado un poco más (z=0.02) -->
+        <a-entity position="0 .2 0.02">
+          
+          <!-- Título principal -->
+          <a-text
+            value="Flat Entrance Door Check (HRB/MRB)"
+            position="0 0.40 0"
+            align="center"
+            width="1.4"
+            color="#000"
+            scale="1.4 1.4 1">
+          </a-text>
+
+          <a-text
+            value="Status: Complete"
+            position="0 0.28 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Score 4 / 8 (50%)"
+            position="0 0.20 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Flagged items: 0"
+            position="0 0.12 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Actions: 0"
+            position="0 0.04 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="What door are you checking? #1"
+            position="0 -0.04 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="On what level is the flat? 0"
+            position="0 -0.12 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Conducted by: Matt Sillitoe"
+            position="0 -0.20 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Check Ref: BST - FEDC - 011922"
+            position="0 -0.28 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Door Check 4 / 8 (50%)"
+            position="0 -0.36 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Condition & Operation 2 / 6 (33.33%)"
+            position="0 -0.44 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Check both sides of the door? No"
+            position="0 -0.52 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Fire door check letter posted? Yes"
+            position="0 -0.60 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="CLOSING STATEMENT 2 / 2 (100%)"
+            position="0 -0.68 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Additional observations? No"
+            position="0 -0.76 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+          <a-text
+            value="Date: 17 Oct 2024 10:02 AM BST"
+            position="0 -0.84 0"
+            align="center"
+            width="1.4"
+            color="#000">
+          </a-text>
+
+        </a-entity>
+      </a-entity>
+    </a-marker>
+
+    <!-- Cámara y cursor para escritorio -->
+    <a-entity camera="fov:60" playsinline></a-entity>
+    <a-entity cursor="rayOrigin: mouse"></a-entity>
+  </a-scene>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video interactivo en AR</title>
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- AR.js para A-Frame -->
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar.js"></script>
+    <style>
+      body { margin: 0; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <a-scene
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+    >
+      <a-assets>
+        <!-- Reemplaza la ruta del video por la URL correcta -->
+        <video id="miVideo" src="video.mp4" loop muted playsinline crossorigin="anonymous"></video>
+      </a-assets>
+
+      <!-- Marcador AR -->
+      <a-marker type="pattern" url="pattern1.patt?v=3e43">
+        <!-- Plano que muestra el video (relación 9:16 => 1 x 1.78) -->
+        <a-plane
+          id="videoPlane"
+          position="0 0 -0.09"
+          rotation="-90 0 0"
+          width="1"
+          height="2"
+          material="shader: flat; src: #miVideo"
+          class="clickable"
+        ></a-plane>
+      </a-marker>
+
+      <!-- Cámara con cursor -->
+      <a-entity camera look-controls>
+        <a-cursor 
+          fuse="false"
+          rayOrigin="mouse"
+          color="#FF0000">
+        </a-cursor>
+      </a-entity>
+    </a-scene>
+
+    <script>
+      // Espera a que se cargue la escena y los assets
+      window.addEventListener("load", function () {
+        const videoEl = document.querySelector("#miVideo");
+        const videoPlane = document.querySelector("#videoPlane");
+
+        function toggleVideo() {
+          if (videoEl.paused) {
+            videoEl.play().then(() => {
+              console.log("Video reproduciéndose");
+            }).catch(err => {
+              console.error("Error al reproducir el video:", err);
+            });
+          } else {
+            videoEl.pause();
+            console.log("Video en pausa");
+          }
+        }
+
+        // Usa el evento "click" (activado por el cursor)
+        videoPlane.addEventListener("click", function () {
+          console.log("Click detectado en videoPlane");
+          toggleVideo();
+        });
+
+        // Además, para detectar toques de forma global (como fallback)
+        document.body.addEventListener("touchstart", function (e) {
+          console.log("touchstart detectado en el body");
+          // Aquí se podría implementar un raycaster manual si es necesario.
+        });
+      });
+    </script>
+  </body>
+</html>

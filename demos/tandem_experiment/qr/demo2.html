@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dos Imágenes en AR - Más grandes</title>
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- AR.js para A-Frame -->
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene 
+      embedded 
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
+      
+      <a-assets>
+        <!-- Reemplaza las rutas por las URL correctas de tus imágenes -->
+        <img id="imagenIzquierda" src="certificate-1.jpg" crossorigin="anonymous" />
+        <img id="imagenDerecha" src="certificate-2.jpg" crossorigin="anonymous" />
+      </a-assets>
+
+      <!-- Marcador AR -->
+      <a-marker type="pattern" url="pattern1.patt?v=45">
+        <!-- Contenedor para ajustar la rotación -->
+        <a-entity rotation="-90 0 0">
+          <!-- Imagen izquierda: usando width="1.5" y height ≈ 2.67 -->
+          <a-plane 
+            position="-1 0 0" 
+            width="1.5" 
+            height="2.67" 
+            material="shader: flat; src: #imagenIzquierda">
+          </a-plane>
+          <!-- Imagen derecha -->
+          <a-plane 
+            position="1 0 0" 
+            width="1.5" 
+            height="2.67" 
+            material="shader: flat; src: #imagenDerecha">
+          </a-plane>
+        </a-entity>
+      </a-marker>
+
+      <!-- Cámara -->
+      <a-entity camera="fov:30"></a-entity>   
+     </a-scene>
+  </body>
+</html>

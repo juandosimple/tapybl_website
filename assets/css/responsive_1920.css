@@ -1,0 +1,98 @@
+/* 1920 and above*/
+@media (min-width: 1800px) {
+  #page-home .navbar ,
+  #page-request-demo .navbar {
+    padding: 1rem 12rem;
+  }
+  #home-background {
+    background: rgb(25, 28, 33);
+    background: -moz-linear-gradient(
+      180deg,
+      rgba(25, 28, 33, 1) 0%,
+      rgba(25, 28, 33, 1) 88%,
+      rgba(25, 28, 33, 0) 88%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(25, 28, 33, 1) 0%,
+      rgba(25, 28, 33, 1) 88%,
+      rgba(25, 28, 33, 0) 88%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(25, 28, 33, 1) 0%,
+      rgba(25, 28, 33, 1) 88%,
+      rgba(25, 28, 33, 0) 88%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#191c21",endColorstr="#191c21",GradientType=1);
+  }
+  .full-height.first-section .home-buttons_container {
+    max-width: 70%;
+  }
+  #home {
+    padding-top: 80px;
+  }
+  .container {
+    max-width: 1600px; /* Aumenta el tamaño del contenedor para pantallas grandes */
+  }
+  body p {
+    font-size: 1.3rem;
+    line-height: 2.08rem;
+  }
+  #home-background {
+    /* background-size: 60%; */
+  }
+
+  footer {
+    padding: 3rem 10rem;
+  }
+
+  .full-height.first-section .home-buttons_container .secondary-buttons {
+    width: 60%;
+  }
+
+  #faqs .accordion-button {
+    font-size: 1.2rem;
+    line-height: 2.08rem;
+  }
+
+  #faqs .accordion-body {
+    font-size: 1.2rem;
+    line-height: 2.08rem;
+  }
+
+  .section-with_buttons.special .secondary-buttons {
+    width: 22%;
+  }
+  #home-second-part .video-thumb video {
+    width: 160%;
+  }
+  #home-second-part div:nth-child(2) .video-thumb {
+    width: 36%;
+  }
+
+  #features .features {
+    /* padding: 0 10rem; */
+  }
+  #stats #home-top_stats {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    margin: 2rem auto;
+    transform: scale(1.2);
+  }
+  #platform{
+    width: 65%;
+  }
+  #platform .box.expanded{
+    flex: 0 0 580px;
+  }
+  #platform .box.expanded h1{
+    bottom: 240px;
+  }
+  #home section#video-part h1{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+/* 1920 and above*/

@@ -1,0 +1,162 @@
+/* tablet and above*/
+@media (min-width: 769px) {
+
+  #page-home .navbar #login ,
+  #page-request-demo .navbar #login {
+    display: block;
+    opacity: 1;
+    border: 1px solid #d5d7da;
+    border-radius: 14px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 42px;
+    max-height: 52px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff !important;
+  }
+
+  #page-home.page-platform-education .navbar #login{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #000 !important;
+  }
+
+  #page-home.page-platform-education .navbar #login:hover{
+    border: 2px solid #2B8982!important;
+    color: #2B8982 !important;
+  }
+  
+  #page-home .navbar #free-signup,
+  #page-request-demo .navbar #free-signup {
+    background: linear-gradient(317.42deg, #04504e -11.84%, #022221 110.79%);
+    border-radius: 14px;
+    color: #fff !important;
+    max-height: 52px;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+  }
+
+  #page-home .navbar {
+    padding:1rem 8rem
+  }
+
+  #page-home .navbar > .container-fluid .navbar-brand,
+  #page-request-demo .navbar > .container-fluid .navbar-brand{
+    margin-right: 2rem;
+  }
+  #home-background {
+    background: transparent;
+  }
+
+  footer{
+    padding-left: 4rem;
+    padding-top: 2rem; 
+  }
+  @-webkit-keyframes bounce-top {
+    0% {
+      -webkit-transform: rotate(-90deg) translateY(-25px);
+      transform: rotate(-90deg) translateY(-25px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: rotate(-90deg) translateY(-24px);
+      transform: rotate(-90deg) translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: rotate(-90deg) translateY(-12px);
+      transform: rotate(-90deg) translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: rotate(-90deg) translateY(-6px);
+      transform: rotate(-90deg) translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: rotate(-90deg) translateY(-4px);
+      transform: rotate(-90deg) translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: rotate(-90deg) translateY(0px);
+      transform: rotate(-90deg) translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: rotate(-90deg) translateY(0px);
+      transform: rotate(-90deg) translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: rotate(-90deg) translateY(-25px);
+      transform: rotate(-90deg) translateY(-25px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: rotate(-90deg) translateY(-24px);
+      transform: rotate(-90deg) translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: rotate(-90deg) translateY(-12px);
+      transform: rotate(-90deg) translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: rotate(-90deg) translateY(-6px);
+      transform: rotate(-90deg) translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: rotate(-90deg) translateY(-4px);
+      transform: rotate(-90deg) translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: rotate(-90deg) translateY(0px);
+      transform: rotate(-90deg) translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: rotate(-90deg) translateY(0px);
+      transform: rotate(-90deg) translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+}

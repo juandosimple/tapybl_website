@@ -1,0 +1,111 @@
+.building-title svg {
+  width: 30px;
+}
+.building-title {
+  font-size: 1.5rem;
+}
+
+.buildings-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.buildings-list li {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border-color: #ccc;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.buildings-list li:nth-child(2).disabled {
+  opacity: 0.6;
+}
+
+.buildings-list li:nth-child(3).disabled {
+  opacity: 0.3;
+}
+
+.buildings-list li:not(.disabled):hover {
+  border-color: #28a745;
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.buildings-list a {
+  text-decoration: none;
+  display: flex;
+  color: #000;
+}
+
+.buildings-list .building-name h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.buildings-list .building-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.buildings-list .building-actions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.buildings-list .building-actions li {
+  border: 0;
+  padding: 0;
+}
+
+.buildings-list .building-actions li a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.buildings-list .building-actions li a:hover {
+  box-shadow: none;
+  border: 0;
+  -moz-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+  color:#28a745;
+}
+
+.buildings-list .building-actions svg {
+  width: 20px;
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-brand .logo {
+  width: 30px;
+}
+.navbar-brand .logo-type {
+  font-size: 1rem;
+  margin: 0;
+}
