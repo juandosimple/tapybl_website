@@ -1,0 +1,313 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+#firstColumn {
+  overflow: hidden;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+#firstColumn .header {
+  margin: 1.5rem 0;
+}
+
+#firstColumn .header h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#firstColumn .header h2 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#viewer {
+  width: 100%;
+  height: 90vh;
+  display: block;
+  position: relative;
+}
+.widget {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-size: 18px;
+  color: #555;
+  margin-top: 15px;
+}
+
+#tempStatus,
+.degrees {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#drop-zone {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+#drop-zone.dragover {
+  background-color: #e0f7fa;
+  border-color: #28a745;
+  color: #007c91;
+}
+
+#file-info {
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#file-info p {
+  margin: 5px 0;
+}
+
+/* Estilos para el loader */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #28a745;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.widget #fileList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  max-height: 140px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1rem;
+  border-color: #bfbfbf;
+}
+
+.widget #fileList li {
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.widget #fileList li svg {
+  width: 15px;
+}
+
+.widget #fileList li span {
+  width: 20px;
+  flex: none;
+}
+
+.widget #fileList a.me-3 {
+  overflow: hidden;
+  text-align: left;
+  max-width: 70%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #3a3a3a;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.widget #fileList a.me-3:hover {
+  color: #28a745;
+}
+
+.widget #fileList a.btn {
+  text-decoration: none;
+  border: 0;
+  width: 35px;
+  color: #3a3a3a;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.widget #fileList a.btn:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.widget#documentsList button.btn.btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.widget#documentsList button.btn.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-brand .logo {
+  width: 30px;
+}
+.navbar-brand .logo-type {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.widget #fileList li svg.fileIconType {
+  width: 20px;
+}
+
+.widget #fileList li a.fileLink {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.widget #fileList li .fileDownload svg {
+  width: 20px;
+  color:#3a3a3a
+}
+
+.widget #fileList li span.noDocuments {
+  padding: 1rem 0;
+  color: #a4a4a4;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.widget #fileList li strong {
+  font-weight: normal;
+}
+
+
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 20px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 5.33333px;
+  width: 10.33333px;
+  height: 10.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
