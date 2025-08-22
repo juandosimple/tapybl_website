@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       classroomFeatures.forEach((feature) => {
         const featureItem = document.createElement("div");
         featureItem.className = "FeatureItem";
-        featureItem.innerHTML = `<img src="../../assets/img/subscriotion_green_check.svg" />${feature}`;
+        featureItem.innerHTML = `<img src="../../assets/img/subscription_green_check.svg" />${feature}`;
         dynamicFeaturesList.appendChild(featureItem);
       });
     } else if (plan === "school") {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
       classroomFeatures.forEach((feature) => {
         const featureItem = document.createElement("div");
         featureItem.className = "FeatureItem";
-        featureItem.innerHTML = `<img src="../../assets/img/subscriotion_green_check.svg" />${feature}`;
+        featureItem.innerHTML = `<img src="../../assets/img/subscription_green_check.svg" />${feature}`;
         dynamicFeaturesList.appendChild(featureItem);
       });
 
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
       schoolFeatures.forEach((feature) => {
         const featureItem = document.createElement("div");
         featureItem.className = "FeatureItem";
-        featureItem.innerHTML = `<img src="../../assets/img/subscriotion_green_check.svg" />${feature}`;
+        featureItem.innerHTML = `<img src="../../assets/img/subscription_green_check.svg" />${feature}`;
         dynamicFeaturesList.appendChild(featureItem);
       });
     } else if (plan === "university") {
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
       classroomFeatures.forEach((feature) => {
         const featureItem = document.createElement("div");
         featureItem.className = "FeatureItem";
-        featureItem.innerHTML = `<img src="../../assets/img/subscriotion_green_check.svg" />${feature}`;
+        featureItem.innerHTML = `<img src="../../assets/img/subscription_green_check.svg" />${feature}`;
         dynamicFeaturesList.appendChild(featureItem);
       });
 
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       universityFeatures.forEach((feature) => {
         const featureItem = document.createElement("div");
         featureItem.className = "FeatureItem";
-        featureItem.innerHTML = `<img src="../../assets/img/subscriotion_green_check.svg" />${feature}`;
+        featureItem.innerHTML = `<img src="../../assets/img/subscription_green_check.svg" />${feature}`;
         dynamicFeaturesList.appendChild(featureItem);
       });
     }

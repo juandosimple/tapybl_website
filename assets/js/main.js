@@ -8,26 +8,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// TITLE ANIMATION
-const texts = document.querySelectorAll(".animated-text");
-let index = 0;
-
-function changeText() {
-  if (index > 0) {
-    texts[index - 1].classList.remove("show"); // Oculta la palabra anterior
-  }
-
-  texts[index].classList.add("show"); // Muestra la palabra actual
-  index++;
-
-  if (index < texts.length) {
-    setTimeout(changeText, 2000); // Cambia cada 2 segundos
-  }
-}
-
-setTimeout(changeText, 000); // Espera antes de iniciar el primer cambio
-
-
 const navbarCollapse = document.querySelector(".navbar-collapse");
 
 navbarCollapse.addEventListener("show.bs.collapse", () => {
@@ -72,7 +52,6 @@ navbarCollapse.addEventListener("hide.bs.collapse", () => {
 //     paragraph.style.bottom = "-50px";
 //   });
 // });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const boxes = document.querySelectorAll(".box");
@@ -144,3 +123,68 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// STATS
+(() => {
+  const container = document.querySelector(".stats-companies-slider");
+  if (!container) return;
+
+  // Crear track y meter los slides
+  const slides = Array.from(container.children);
+  const track = document.createElement("div");
+  track.className = "scs-track";
+
+  slides.forEach((s) => track.appendChild(s)); // originales
+  slides.forEach((s) => track.appendChild(s.cloneNode(true))); // duplicados
+
+  container.innerHTML = ""; // limpiar
+  container.appendChild(track);
+
+  const SPEED = 20; // px por segundo
+
+  function setDuration() {
+    const halfWidth = track.scrollWidth / 2;
+    const duration = halfWidth / SPEED;
+    track.style.setProperty("--scs-duration", `${duration}s`);
+  }
+
+  window.addEventListener("load", setDuration);
+  window.addEventListener("resize", () => {
+    clearTimeout(window.__scsTimer);
+    window.__scsTimer = setTimeout(setDuration, 150);
+  });
+})();
+// STATS
+
+//VIDEO
+  (function () {
+    const modalEl = document.getElementById('videoModal');
+    const videoEl = document.getElementById('expertsVideo');
+
+    modalEl.addEventListener('show.bs.modal', function (e) {
+      const trigger = e.relatedTarget;
+      if (!trigger) return;
+
+      const src = trigger.getAttribute('data-video');
+      const poster = trigger.getAttribute('data-poster') || '';
+
+      // preparar video
+      videoEl.poster = poster;
+      videoEl.src = src;
+      videoEl.currentTime = 0;
+
+      // autoplay (con pequeño delay evita bloqueos en algunos navegadores)
+      setTimeout(() => {
+        const playPromise = videoEl.play();
+        if (playPromise && playPromise.catch) playPromise.catch(() => {/* silenciar error si el user agent bloquea */});
+      }, 100);
+    });
+
+    modalEl.addEventListener('hidden.bs.modal', function () {
+      // pausar y limpiar para liberar memoria y evitar audio fantasma
+      videoEl.pause();
+      videoEl.removeAttribute('src');
+      videoEl.load();
+      videoEl.removeAttribute('poster');
+    });
+  })();

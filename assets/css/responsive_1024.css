@@ -21,48 +21,6 @@
     padding: 0.5rem;
   }
   /* navigation */
-  #home {
-    padding-top: 170px;
-  }
-  #home-background {
-    background: rgb(25, 28, 33);
-    background: -moz-linear-gradient(
-      180deg,
-      rgba(25, 28, 33, 1) 0%,
-      rgba(25, 28, 33, 1) 69%,
-      rgba(25, 28, 33, 0) 69%
-    );
-    background: -webkit-linear-gradient(
-      180deg,
-      rgba(25, 28, 33, 1) 0%,
-      rgba(25, 28, 33, 1) 69%,
-      rgba(25, 28, 33, 0) 69%
-    );
-    background: linear-gradient(
-      180deg,
-      rgba(25, 28, 33, 1) 0%,
-      rgba(25, 28, 33, 1) 69%,
-      rgba(25, 28, 33, 0) 69%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#191c21",endColorstr="#191c21",GradientType=1);
-  }
-
-  .home-buttons_container {
-    width: 100%;
-    display: flex;
-    max-width: 70%;
-  }
-
-  .home-buttons_container .cta-button_primary {
-    max-width: 250px;
-    margin-right: 3rem;
-  }
-
-  .first-title h1 {
-    font-size: 3.625rem;
-    text-align: center;
-  }
-
   .text-container h1 {
     font-size: 3.625rem;
     width: 100%;
@@ -71,8 +29,10 @@
   .first-subtitle {
     max-width: 70%;
   }
-  .first-subtitle h3 {
+  .first-subtitle p {
     font-size: 1.25rem;
+    text-align: left;
+    font-weight: 400;
   }
   #thankyou-container {
     margin-top: 8rem;
@@ -80,15 +40,8 @@
 }
 /* tablet and above*/
 @media (min-width: 1000px) and (max-width: 1279px) {
-  .home-buttons_container .cta-button_primary {
-    margin-right: 0;
-  }
-  .home-buttons_container {
-    justify-content: space-around;
-  }
-  .cta-button_secondary {
-    max-width: 170px;
-  }
+
+
   #home-second-part .home-top div:first-child {
     justify-content: center;
   }
@@ -106,17 +59,7 @@
   #home-second-part .home-top div:last-child {
     justify-content: center;
   }
-  #stats #home-top_stats {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #stats #home-top_stats span.mini-separator {
-    transform: rotate(90deg);
-  }
-  #stats #home-top_stats .mini-separator.invisible {
-    display: none;
-  }
+
   #experts .experts-card {
     border: 0;
     box-shadow: none;
@@ -142,12 +85,7 @@
   .section-with_buttons.special .cta-button_primary {
     max-width: 260px;
   }
-  .home-buttons_container .cta-button_secondary {
-    max-width: 170px;
-  }
-  .cta-button_secondary {
-    max-width: 200px;
-  }
+
   #features .col-12 {
     order: 2;
   }
@@ -157,14 +95,6 @@
   }
   #platform .box:before {
     top: 0;
-  }
-  #steps h1 {
-    margin: 3rem 0;
-    font-weight: 500;
-    font-size: 2.25rem;
-  }
-  #steps h1 span {
-    display: inline;
   }
   #faqs {
     padding-left: 4rem;
@@ -214,18 +144,5 @@
     padding: 0 14rem;
   }
 
-  #steps .step > div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    width: 70%;
-    justify-content: center;
-    margin: 0 auto;
-  }
 
-  #steps .step > div:nth-child(2) img {
-    max-width: 340px;
-  }
-  #steps .step:nth-child(3) > div:nth-child(2) img {
-    order: 2;
-  }
 }

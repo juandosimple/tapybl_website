@@ -72,7 +72,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle platform-selector" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Education
               </a>
@@ -80,7 +80,7 @@
                 <li><a class="dropdown-item" href="../">Business</a></li>
                 <li><a class="dropdown-item active" href="#">Education</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#features">Features</a>
             </li>
@@ -126,55 +126,54 @@
         </div>
       </div>
     </nav>
-    <div id="home-background">
-      <div class="container" id="home">
-        <div class="row">
-          <section class="full-height first-section col">
-            <div class="first-title">
-              <h1>Make learning</h1>
-              <div class="text-container">
-                <h1 class="brand-color_2 animated-text">engaging</h1>
-                <h1 class="brand-color_2 animated-text">fun</h1>
-                <h1 class="brand-color_2 animated-text">tapybl</h1>
+    <!-- HERO -->
+    <div class="home-hero">
+      <div class="home-hero__container container">
+        <div class="home-hero__row row">
+          <section class="home-hero__intro col home-hero__intro--full">
+            <div class="home-hero__title">
+              <h1 class="home-hero__title-line">Make learning</h1>
+              <div class="home-hero__title-rotator">
+                <h1 class="home-hero__title-word home-hero__title-word--accent animated-text">engaging</h1>
+                <h1 class="home-hero__title-word home-hero__title-word--accent animated-text">fun</h1>
+                <h1 class="home-hero__title-word home-hero__title-word--accent animated-text">tapybl</h1>
               </div>
             </div>
 
-            <div class="first-subtitle">
-              <h3>
+            <div class="home-hero__subtitle">
+              <h3 class="home-hero__subtitle-text">
                 Bring your learning content to life with tapybl’s AI-powered interactive video learning platform.
               </h3>
             </div>
 
-            <div class="home-buttons_container">
-              <a
-                href="./pricing/"
-                class="cta-button_primary extra-margin_bottom_20 extra-margin_top_30"
-              >
-                <span class="button-text">Try tapybl for free</span>
-                <span class="button-text-hover">Get started</span>
+            <div class="home-hero__actions">
+              <a href="./pricing/" class="cta cta--primary home-hero__cta">
+                <span class="cta__label">Try tapybl for free</span>
+                <span class="cta__label cta__label--hover">Get started</span>
               </a>
-              <a
-                href="../request-demo/"
-                class="cta-button_secondary extra-margin_bottom_20 extra-margin_top_30 half-size"
-                >Request demo</a
-              >
+
+              <a href="../request-demo/" class="cta cta--secondary cta--half home-hero__cta">
+                <span class="cta__label">Request demo</span>
+              </a>
             </div>
           </section>
-          <section id="home-second-part">
-            <div class="home-top">
-              <div>
-                <img src="../../assets/img/ed-home-top-1.jpg" alt="" />
-                <img src="../../assets/img/ed-home-top-2.jpg" alt="" />
+
+          <section class="home-hero__gallery" aria-label="Showcase">
+            <div class="home-hero__gallery-top">
+              <div class="home-hero__gallery-col">
+                <img class="home-hero__img" src="../../assets/img/ed-home-top-1.jpg" alt="">
+                <img class="home-hero__img" src="../../assets/img/ed-home-top-2.jpg" alt="">
               </div>
-              <div>
-                <img src="../../assets/img/ed-home-top-3.jpg" alt="" />
-                <img src="../../assets/img/ed-home-top-4.jpg" alt="" />
+              <div class="home-hero__gallery-col">
+                <img class="home-hero__img" src="../../assets/img/ed-home-top-3.jpg" alt="">
+                <img class="home-hero__img" src="../../assets/img/ed-home-top-4.jpg" alt="">
               </div>
             </div>
           </section>
         </div>
       </div>
     </div>
+    <!-- HERO -->
     <div class="container" id="stats">
       <div class="row">
         <div id="home-top_stats">
