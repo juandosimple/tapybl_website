@@ -138,6 +138,7 @@ body {
   bottom: -115px;
   z-index: 0;
   opacity: 0.5;
+  display: none;
 }
 
 #home section {
@@ -277,6 +278,7 @@ body {
     bottom: 0;
     z-index: 0;
     opacity: 1;
+    display: block;
   }
   #home section {
     padding-top: 6%;
@@ -1267,19 +1269,11 @@ footer .footer-social p {
   .features-cta-buttons {
     flex-direction: row;
   }
-  #features.block-text-right .features-image {
-    order: 2;
-  }
-
-  #features.block-text-right .features-text {
+  .features.block-right .features-text {
     order: 1;
   }
 
-  #features.block-text-left .features-image {
-    order: 1;
-  }
-
-  #features.block-text-left .features-text {
+  .features.block-right .features-image {
     order: 2;
   }
 }
@@ -1827,6 +1821,8 @@ footer .footer-social p {
 
 .SelectSubscriptionContainer .ResourceContainer {
   margin-bottom: 18px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .SubscriptionDetailsContainer .ResourcesContainer img {
@@ -2025,3 +2021,33 @@ footer .footer-social p {
 }
 /* PRICING SECTION - RESPONSIVE */
 /* PRICING SECTION */
+
+#cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1080;
+  background: #212529;
+  color: #fff;
+  padding: 14px 16px;
+  display: none;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+#cookie-banner .actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  #cookie-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #cookie-banner .actions {
+    width: 100%;
+  }
+}
