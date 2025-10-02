@@ -188,3 +188,22 @@ document.addEventListener("DOMContentLoaded", function () {
       videoEl.removeAttribute('poster');
     });
   })();
+
+
+  // HOME VIDEO
+  document.addEventListener("DOMContentLoaded", function() {
+  const video = document.getElementById("heroVideo");
+
+  // Activa controles solo cuando está en hover
+  video.addEventListener("mouseenter", () => video.setAttribute("controls", true));
+  video.addEventListener("mouseleave", () => video.removeAttribute("controls"));
+
+  // Click = play/pause
+  video.addEventListener("click", () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+});

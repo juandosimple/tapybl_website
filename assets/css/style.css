@@ -113,19 +113,19 @@ body {
 
 /* HOME HERO SECTION */
 #home-background {
-  background: #1a1c21;
+  background: #191C21;
   display: flex;
   align-items: center;
-  background: url("../img/home-background.jpg");
-  background-size: cover;
+  /* background: url("../img/home-background.jpg"); */
+  /* background-size: cover; */
   position: relative;
-  min-height: 100vh;
+  min-height: 75vh;
   padding-top: 5%;
   padding-bottom: 5%;
   overflow: hidden;
 }
 
-#home-background::after {
+/* #home-background::after {
   background: url("../img/home-background-alex.png");
   background-position: bottom;
   background-size: contain;
@@ -139,10 +139,9 @@ body {
   z-index: 0;
   opacity: 0.5;
   display: none;
-}
+} */
 
 #home section {
-  padding-top: 82px;
   width: 100%;
   z-index: 1;
 }
@@ -153,7 +152,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  flex-direction: column;
+  padding-top:80px
+}
+.home-hero__cta-description{
+  color:white;
+  display: block;
 }
 .home-hero__cta {
   text-decoration: none;
@@ -253,7 +257,7 @@ body {
 }
 
 .home-hero__title-text {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   color: var(--color-white);
   line-height: 1.1;
@@ -271,18 +275,49 @@ body {
   text-align: center;
 }
 
+/* home video */
+.video-wrapper {
+  width: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.video-wrapper video {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+/* ocultar controles por defecto */
+.video-wrapper video::-webkit-media-controls {
+  display: none !important;
+  opacity: 0;
+}
+.video-wrapper video::-moz-media-controls {
+  display: none !important;
+}
+
+/* mostrar controles solo en hover */
+.video-wrapper:hover video::-webkit-media-controls {
+  display: flex !important;
+  opacity: 1;
+}
+.video-wrapper:hover video::-moz-media-controls {
+  display: flex !important;
+}
+/* home video */
+
 @media (min-width: 768px) {
-  #home-background::after {
+  /* #home-background::after {
     width: 40%;
     right: 0;
     bottom: 0;
     z-index: 0;
     opacity: 1;
     display: block;
-  }
+  } */
   #home section {
-    padding-top: 6%;
-    width: 62%;
+    width: 50%;
   }
   .home-hero__actions {
     justify-content: flex-start;
@@ -311,7 +346,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1281px) {
   #home section {
-    width: 75%;
+    width: 50%;
   }
 }
 
@@ -789,7 +824,7 @@ section.full-height {
 }
 
 .stats-companies-slider .slide img {
-  max-height: 172px;
+  max-height: 150px;
   height: auto;
   width: auto;
   object-fit: contain;

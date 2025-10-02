@@ -370,6 +370,11 @@
   footer {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    background-image: url('../img/alex-car.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
   }
   footer h1 {
     font-size: 3rem;
@@ -380,11 +385,11 @@
   }
 
   footer div:first-child {
-    width: 50%;
+    width: 40%;
   }
   footer div.footer-navigation {
     padding-top: 1rem;
-    width: 30%;
+    width: 20%;
   }
   footer div.footer-social {
     width: 20%;
@@ -405,6 +410,31 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+ footer::before {
+  content:'';
+  position: absolute;
+  right: 0;
+  bottom:0;
+  width:339px;
+  height: 417px;
+  background-image: url("../img/alex.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+ footer::after {
+  content:'';
+  position: absolute;
+  right: 0;
+  bottom:0;
+  width: 326px;
+  height: 159px;
+  background-image: url("../img/alex-sign.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
   /* Footer */
 
   /* Thank you */
